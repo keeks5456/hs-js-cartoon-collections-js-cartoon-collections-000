@@ -29,11 +29,17 @@ if(words.length > 4){
 return false
 }
 
-function findTheCheese (foods) {
-  let i = 0;
-  do {
-    foods.findIndex() === foods[i]
-    i++;
+function findTheCheese(foods) {
+let cheese = ["cheddar", "gouda", "camembert"]
+for(let i = 0; i < foods.length; i++){
+  if(foods[i] === "cheddar" || foods[i] === "gouda" || foods[i] === "camembert"){
+    return foods[i];
   }
-  while(i < foods.length)
 }
+return "no cheese!"
+  }
+
+ 
+ 
+ 
+ 
