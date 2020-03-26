@@ -11,7 +11,6 @@ return helper.join("")
 
 //use .upperCase()
   //concat exclamation points at end
-  
 function summonCaptainPlanet(planeteerCalls){
   let i = 0;
   let calls = []
@@ -38,8 +37,26 @@ for(let i = 0; i < foods.length; i++){
 }
 return "no cheese!"
   }
-
+// since we know whats in the array, we want to compare each cheese to the foods index
  
+ 
+ function wordsWithB(name){
+   let newName = [];
+   for(let i = 0; i < name.length; i++){
+   if(name[i].slice(0,1) === "b"){
+     newName.push(name[i]);
+   }
+   }
+   return newName;
+ }
+ 
+ function bNames(name){
+   for(let i = 0; i < names.length; i++){
+     if(name[i] === "b" || name[i] === "B"){
+       return names[i];
+     }
+     }
+   }
  
  
  
